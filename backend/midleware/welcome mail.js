@@ -3,15 +3,15 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'ranjulabandara790@gmail.com',
-        pass: 'ykjv vhog zuxk czdw'
+        user: 'your gmail',
+        pass: 'your genareded app password for gmail'
     }
 });
 
 
 const sendWelcomeEmail = (recipientEmail) => {
     const mailOptions = {
-        from: 'ranjulabandara790@gmail.com',
+        from: 'your gmail',
         to: recipientEmail,
         subject: 'Welcome to Our Website!',
         text: 'Hello and welcome to our website. We are glad to have you on board!'
